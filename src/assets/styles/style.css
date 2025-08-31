@@ -1,0 +1,257 @@
+/* =====  Galobal Styling Started  ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body default styles */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #191A23;
+    background-color: #fcfeff !important;
+}
+
+/* Headings */
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54;
+    font-family: "Roboto", sans-serif;
+
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42;
+    font-family: "Roboto", sans-serif;
+
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34;
+    font-family: "Roboto", sans-serif;
+
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28;
+    font-family: "Roboto", sans-serif;
+
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* Anchor */
+a {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none !important;
+    color: #191A23;
+}
+
+/* List */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+.hover1 {
+    background: #09AFF4;
+    color: #fff;
+    padding: 12px 20px;
+    border: 0.5px solid #09AFF4;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in;
+}
+
+.hover1 i {
+    display: inline-block;
+    transform: rotate(45deg);
+    transition: transform 0.4s ease;
+}
+
+.hover1:hover {
+    background: transparent;
+    color: #09AFF4;
+}
+
+.hover1:hover i {
+    transform: rotate(90deg);
+}
+
+/* =====  Galobal Styling End  ====== */
+/* =====  Header Section Started  ====== */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0px;
+}
+
+header .DesktopLogo img {
+    width: 120px;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .nav li a {
+    color: #191A23;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+header .nav li a.active,
+header .nav li a:hover {
+    color: #09AFF4 !important;
+}
+
+header .nav-link:focus {
+    color: #191A23;
+}
+
+/* Sidebar styling started here */
+
+header .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #191A23;
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.4s ease;
+    z-index: 5;
+    overflow-y: auto;
+}
+
+header .sidebar.open {
+    left: 0;
+}
+
+header .menu-toggle {
+    width: 42px;
+    height: 40px;
+    padding: 0px;
+    background: #09AFF4;
+    color: #fff;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+header .close-btn {
+    background: #09AFF4;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 36px;
+    font-size: 22px;
+    padding: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+header .sidebar-link {
+    display: block;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+header .sidebar-link.active,
+header .sidebar-link:hover {
+    color: #09AFF4;
+    border-color: #09AFF4;
+}
+
+header aside .side_items {
+    display: inline-block;
+    width: 100%;
+    color: #191A23;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+header aside .side_items.active,
+header aside .side_items:hover {
+    color: #09AFF4;
+    border-color: #09AFF4;
+}
+
+header .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+/* =====  Header Section Ended  ====== */
