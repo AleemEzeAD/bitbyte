@@ -38,6 +38,12 @@
         font-size: 15px;
         line-height: 21px;
     }
+
+    .hover1 {
+        padding: 8px 16px;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 /* Mobile (max-width: 767px) */
@@ -97,7 +103,7 @@
 
 @media screen and (max-width: 480px) {
     header .DesktopLogo img {
-        width: 140px;
+        width: 120px;
     }
 }
 
@@ -107,11 +113,11 @@
     }
 
     header .sidebar-logo img {
-        width: 120px;
+        width: 100px;
     }
 
     header .DesktopLogo img {
-        width: 120px;
+        width: 100px;
     }
 
     header .sidebar-menu {
@@ -125,7 +131,7 @@
     }
 
     header .DesktopLogo img {
-        width: 120px;
+        width: 90px;
     }
 
     header .menu-toggle {

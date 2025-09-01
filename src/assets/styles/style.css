@@ -3,7 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Global Reset */
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button,
+input,
+select,
+textarea,
+figure,
+ul,
+ol,
+li,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -68,7 +85,7 @@ h6 {
 p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 22;
+    line-height: 22px;
     font-family: "Roboto", sans-serif;
 
 }
@@ -159,7 +176,7 @@ header .sidebar {
     left: -300px;
     width: 300px;
     height: 100vh;
-    background-color: #191A23;
+    background-color: #ffffff;
     padding: 30px 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     transition: left 0.4s ease;
@@ -177,7 +194,7 @@ header .menu-toggle {
     padding: 0px;
     background: #09AFF4;
     color: #fff;
-    border: none;
+    border: 0.5px solid #09AFF4;
     align-items: center;
     justify-content: center;
     font-size: 22px;
@@ -187,10 +204,15 @@ header .menu-toggle {
     transition: all 0.3s ease-in-out;
 }
 
+header .menu-toggle:hover,
+header .menu-toggle:hover {
+    background: transparent;
+}
+
 header .close-btn {
     background: #09AFF4;
     color: #fff;
-    border: none;
+    border: 0.5px solid #09AFF4;
     width: 40px;
     height: 36px;
     font-size: 22px;
@@ -212,7 +234,7 @@ header .sidebar-menu {
 header .sidebar-link {
     display: block;
     padding: 10px 0;
-    color: #ffffff;
+    color: #191A23;
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
@@ -255,3 +277,61 @@ header .overlay {
 }
 
 /* =====  Header Section Ended  ====== */
+/* =====  Hero Section Started  ====== */
+.Hero {
+    padding: 100px 0px;
+}
+
+.Hero h1 {
+    color: #191A23;
+}
+
+.Hero h1 span {
+
+    color: #09AFF4;
+}
+
+.Hero .hero_text {
+    gap: 15px;
+}
+
+.Hero .Opacity_Slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Hero .Opacity_Slider figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 10s ease-in-out;
+    z-index: 0;
+}
+
+.Hero .Opacity_Slider figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 10s ease-in-out;
+}
+
+.Hero .Opacity_Slider figure.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.Hero .Opacity_Slider figure.active img {
+    transform: scale(1.2);
+}
+
+
+/* =====  Hero Section Ended  ====== */
